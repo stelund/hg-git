@@ -1602,4 +1602,4 @@ class GitHandler(object):
                     raise
 
         # if its not git or git+ssh, try a local url..
-        return client.SubprocessGitClient(), uri
+        return client.LocalGitClient(), uri
